@@ -184,9 +184,10 @@ text-decoration: none;
 }
 
 .header-mailto {
-display: block;
+display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
+align-items: center;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -196,9 +197,10 @@ color: var(--gris-txt-cl);
 }
 
 .header-phone {
-display: block;
+display: flex;
 padding-top: 32px;
 padding-bottom: 32px;
+align-items: center;
 font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
@@ -220,6 +222,8 @@ color: var(--gris-txt-cl);
 .contacts-icon {
     margin-right: 10px;
     fill: currentColor;
+
+
 }
 /* Hero section */
 
@@ -389,6 +393,9 @@ color: var(--main-txt-cl);
 
 .team-socials-list {
     display: flex;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-top: 16px;
 }
 
 .team-socials-list-item {
@@ -500,6 +507,22 @@ text-decoration: none;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
+
+.footer-mailto:hover,
+.footer-mailto:focus {
+    color: var(--accent-cl);
+}
+
+.footer-phone:hover,
+.footer-phone:focus {
+    color: var(--accent-cl);
+}
+
+.footer-adress:hover,
+.footer-adress:focus {
+    color: var(--accent-cl);
+}
+
 
 .footer-link-item {
     margin-bottom: 9px;
