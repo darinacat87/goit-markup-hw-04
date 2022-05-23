@@ -40,15 +40,23 @@
         <nav class="navigation">
           <ul class="list navigation-list">
             <li class="navigation-item">
-              <a class="link navigation-link" href="./index.html">Студия</a>
+              <a
+                class="link navigation-link navigation-link-current"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="navigation-item">
-              <a class="link navigation-link" href="./portfolio.html"
+              <a
+                class="link navigation-link navigation-link-current"
+                href="./portfolio.html"
                 >Портфолио</a
               >
             </li>
             <li class="navigation-item">
-              <a class="link navigation-link" href="#">Контакты</a>
+              <a class="link navigation-link navigation-link-current" href="#"
+                >Контакты</a
+              >
             </li>
           </ul>
         </nav>
@@ -63,7 +71,8 @@
               <svg class="contacts-icon" width="16" height="12">
                 <use href="./images/sprite-defs.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a>
+              info@devstudio.com</a
+            >
           </li>
           <li class="item-contacts">
             <a class="link header-phone" href="tel:380961111111">
@@ -82,9 +91,26 @@
       <section class="hero-section">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="btn" type="button">Заказать услугу</button>
+          <button class="btn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
+
+      <div class="modal-backdrop is-hidden" data-modal>
+        <div class="modal-wrapper">
+          <button
+            class="close-button"
+            type="button"
+            data-modal-close
+            arial-label="Закрыть окно"
+          >
+            <svg class="close-button-icon" width="11px" height="11px">
+              <use href="./images/icons/"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
 
       <!--Наши особенности-->
 
@@ -760,5 +786,6 @@
         </div>
       </div>
     </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
